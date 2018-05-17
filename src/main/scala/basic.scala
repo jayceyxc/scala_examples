@@ -1,5 +1,3 @@
-package ch01
-
 object basic {
   def main(args: Array[String]): Unit = {
     val xmax, ymax = 100
