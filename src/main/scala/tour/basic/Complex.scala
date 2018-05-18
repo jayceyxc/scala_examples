@@ -1,0 +1,17 @@
+package tour.basic
+
+class Complex(real : Double, imaginary: Double) {
+  def re() = real
+  def im() = imaginary
+
+  override def toString: String = "" + re + (if (im < 0) "" else "+") + im + "i"
+}
+
+object ComplexNumbers {
+  def main(args: Array[String]): Unit = {
+    val c = new Complex(1.5, -2.3)
+    println(c.re())
+    println(c.im())
+    println(c)
+  }
+}
